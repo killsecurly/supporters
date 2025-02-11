@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>KillSecurly Supporters</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Liter", serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: greenyellow;
+            padding: 14px 20px;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #4CAF50;
+            color: black;
+        }
+
+        .navbar .logo {
+            flex: 1;
+        }
+
+        .navbar .menu {
+            display: flex;
+        }
+
+        .navbar.responsive .menu {
+            display: block;
+        }
+
+        .navbar .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar .icon {
+                display: block;
+                cursor: pointer;
+            }
+
+            .navbar .menu {
+                display: none;
+            }
+
+            .navbar.responsive .menu {
+                display: flex;
+                flex-direction: column;
+                background-color: greenyellow;
+                position: absolute;
+                top: 15%;
+                left: 0;
+                right: 0;
+            }
+
+            .navbar.responsive .menu a {
+                padding: 10px 20px;
+                /* text-align: center; */
+            }
+        }
+        .largetextbar {
+          font-size: 80px;
+          text-align: center;
+          margin-left: 100px;
+          margin-right: 100px;
+        }
+        .lgtextbarsupport {
+          font-size: 25px;
+          text-align: center;
+          margin-left: 100px;
+          margin-right: 100px;
+        }
+        .smltext {
+          font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar" id="myNavbar">
+        <p href="#" class="logo"><img src="assets/logotopnav.png" style="height: 60px"></p>
+        <div class="menu">
+            <a href="https://killsecurly.com">Home</a> 
+            <a href="https://onc.killsecurly.com">ONC</a>
+            <a href="https://killsecurly.com/math">SecurlyMath</a>
+            <a href="https://interstellar.killsecurly.com">Interstellar</a>
+            <a href="https://killsecurly.com/blobbyboi">Blobby Boi</a>
+            <a href="https://ksfprx.killsecurly.com">KSFProxy</a>
+            <a href="https://assets.killsecurly.com">Assets</a>
+            <a href="https://supporters.killsecurly.com">Supporters</a>
+            <a href="https://discord.gg/Kg8kCGsqcf">Discord</a>
+            <a href="https://policy.killsecurly.com">Policy</a>
+        </div>
+
+        <a href="javascript:void(0);"
+           class="icon" 
+           onclick="toggleMenu()">
+            &#9776;
+        </a>
+    </div>
+    <div class="largetextbar" id="largetextbar">
+      <p>Supporters</p>
+    </div>
+    <div class="lgtextbarsupport">
+      <p>Thank you to:</br></p>
+      <p>Nail K. for 1.7 pounds of pennies!</p>
+    </div>
+    <div class="smltext">
+      <p></br></br>Website version v0.1.0 (20250211b1) gp build 1 [pre-alpha]</p>
+    </div>
+   
+
+    <script>
+        function toggleMenu() {
+            let navbar = document.getElementById("myNavbar");
+            navbar.classList.toggle("responsive");
+        }
+    </script>
+</body>
+
+</html> 
